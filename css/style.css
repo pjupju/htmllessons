@@ -1,25 +1,51 @@
+@font-face { font-family: roboto-regular;
+    src: url(../fonts/3966.ttf); }
+/*
+table {
+    text-align: center;
+    width: 100%;
+}
+*/
+
 h1 {
-    margin-left: 15px;
     color: blue;
+    border-bottom: 1px solid black;
+    padding: 0 15px 10px;
     text-transform: uppercase;
 }
-.items {
+h2 {
+    color: green;
     margin-left: 30px;
-    max-width: 800px;
+    text-transform: uppercase;
 }
-.items > .item-1 {
-    padding-top: 10px;
+.blocks {
+    padding: 0 30px;
 }
-.items > .item-1 > img {
-    width: 300px;
+
+.block-1 > img {
+    width: 280px;
     height: auto;
-    float: left;
-    margin-right: 15px;
+    float: left; 
 }
-.items > .item-1 > p {
-    padding-right: 15px;
+.block-1 > p, .block-2 > p {
+    font-size: 18px;
 }
-.items > .item-1 > p > span {
-    font-weight: bold;
-    color: blueviolet;
+.block-1 > p > span, .block-2 > p > span {
+    font-weight: 900;
 }
+.block-2 {
+    margin-top: 150px;
+}
+.block-2 > img {
+    width: 280px;
+    height: auto;
+    float: right;
+}
+.block-2 > img:hover {
+    width: 450px;
+    height: auto;
+    border: 3px solid green;
+}
+
+
+
