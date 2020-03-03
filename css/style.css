@@ -1,51 +1,98 @@
-@font-face { font-family: roboto-regular;
-    src: url(../fonts/3966.ttf); }
-/*
-table {
-    text-align: center;
-    width: 100%;
+body {
+    margin: 0;
 }
-*/
-
-h1 {
-    color: blue;
-    border-bottom: 1px solid black;
-    padding: 0 15px 10px;
-    text-transform: uppercase;
-}
-h2 {
-    color: green;
-    margin-left: 30px;
-    text-transform: uppercase;
+.main {
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(70, 158, 136);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .blocks {
-    padding: 0 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.block-red, .block-blue, .block-green {
+    width: 100px;
+    height: 100px;
+}
+.block-red {
+    background-color: red;
+}
+.block-blue {
+    background-color: blue;
+}
+.block-green {
+    background-color: green;
 }
 
-.block-1 > img {
-    width: 280px;
-    height: auto;
-    float: left; 
+.items {
+    display: flex;
+    justify-content: space-between;
 }
-.block-1 > p, .block-2 > p {
-    font-size: 18px;
+.item-red, .item-blue, .item-purple, .item-black {
+    width: 100px;
+    height: 100px;
 }
-.block-1 > p > span, .block-2 > p > span {
-    font-weight: 900;
+.item-red {
+    background-color: red;
 }
-.block-2 {
-    margin-top: 150px;
+.item-blue {
+    background-color: blue;
 }
-.block-2 > img {
-    width: 280px;
-    height: auto;
-    float: right;
+.item-green {
+    width: 250px;
+    height: 100px;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-.block-2 > img:hover {
-    width: 450px;
-    height: auto;
-    border: 3px solid green;
+.new-red, .new-blue, .new-green {
+    width: 200px;
+    height: 25px;
 }
-
-
-
+.new-red {
+    background-color: red;
+}
+.new-blue {
+    background-color: blue;
+}
+.new-green {
+    background-color: rgb(1, 17, 1);
+}
+.item-purple {
+    background-color: purple;
+}
+.item-black {
+    background-color: black;
+}
+div.newblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newblock-item {
+    width: 250px;
+    height: 100px;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newblock-green, .newblock-red, .newblock-blue {
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+}
+.newblock-green {
+    background-color: green;
+}
+.newblock-red {
+    background-color: red;
+}
+.newblock-blue {
+    background-color: blue;
+}
